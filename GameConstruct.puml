@@ -1,0 +1,47 @@
+@startuml GameConstruct
+
+class GameKernel
+GameKernel -> PlayerList : 包含
+GameKernel -> MissionList : 包含
+GameKernel -> MapGraph : 包含
+GameKernel -> EnermyGenerater : 包含
+
+class PlayerList
+PlayerList o- Player : 包含所有>
+
+class Player
+Player -> PhoneHolder : 有一个
+Player -> EmptyHanded : 其他都是
+Player -> Weapon : 可装备
+
+class Phone{
+    可移动
+}
+Phone -> PhoneHolder : 被持有
+Phone -> MissionList : 更新
+
+class MapGraph{
+    地图场景，按它们的连通关系构成图
+}
+MapGraph <- Scene : 构成
+
+class Scene
+Scene -> NPC : 包含
+Scene -> Resources : 包含
+
+class EnermyGenerater
+EnermyGenerater -> Enermy : 生成
+
+class Enermy
+Enermy -> PhoneHolder : 追杀
+Enermy -> Weapon : 携带
+EmptyHanded -> PhoneHolder : 提供物资
+
+class MissionList
+MissionList -> Mission : 包含
+
+class Mission{
+    任务完成情况决定游戏结局
+}
+
+@enduml
