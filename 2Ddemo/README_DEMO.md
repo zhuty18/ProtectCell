@@ -12,4 +12,4 @@ Demo详情：
 
 5.demo功能 控制一个角色在平台上自由移动和跳跃 （碰撞检测，角色动画帧等全部使用unity引擎点点点完成，不用写代码）
 
-![image](https://github.com/zhuty18/ProtectCell/blob/master/2Ddemo/photo/2020-10-24%20-%20%E5%89%AF%E6%9C%AC.jpg)
+![Demopic1](https://github.com/zhuty18/ProtectCell/blob/master/2Ddemo/photo/2020-10-24%20-%20%E5%89%AF%E6%9C%AC.jpg)
