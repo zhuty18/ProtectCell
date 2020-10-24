@@ -1,0 +1,7 @@
+.vscode/
+.DS_Store
+*.sln
+*.csproj
+UnityTempFile*
+2Ddemo/Temp
+
